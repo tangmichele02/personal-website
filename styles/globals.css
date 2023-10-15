@@ -1,3 +1,6 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
 body {
@@ -25,10 +28,21 @@ h1 {
     line-height: 48px;
 }
 
+h2 {
+    font-size: 28px; 
+    font-weight: 400;
+    line-height: 48px;
+}
+
+
 @media (min-width: 600px) {
     h1 {
         font-size: 56px; 
         line-height: 72px;
+    }
+    h2 {
+        font-size: 32px;
+        line-height: 56px;
     }
 }
 
@@ -44,4 +58,50 @@ p_a {
 
 hr {
     margin: 56px 0;
+}
+
+.project-box {
+    border: 1px solid #bbb;
+    padding: 48px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    color: unset;
+    text-decoration: none;
+
+}
+
+.project-box img {
+    width: 50%;
+    justify-content: center;
+}
+
+.project-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 1px;
+}
+
+.project-box h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.project-box h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.project-box p {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+#project-img {
+    text-align: center;
 }
